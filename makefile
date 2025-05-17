@@ -8,3 +8,9 @@ prod:
 
 down:
 	docker-compose down
+
+shell:
+	docker exec -it golangapi-api-1 sh
+
+air:
+	docker exec -it golangapi-api-1 air
