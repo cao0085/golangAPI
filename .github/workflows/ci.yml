@@ -40,13 +40,3 @@ jobs:
 
       - name: Build Docker image
         run: docker compose -f docker-compose.yml --env-file .env.prod build
-
-    # Optional: push image to Docker Hub
-    # - name: Log in to Docker Hub
-    #   uses: docker/login-action@v2
-    #   with:
-    #     username: ${{ secrets.DOCKERHUB_USERNAME }}
-    #     password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-    # - name: Push image
-    #   run: docker tag golangapi-api yourname/golangapi:latest && docker push yourname/golangapi:latest

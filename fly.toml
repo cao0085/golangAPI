@@ -1,8 +1,5 @@
 app = "golangapi"
 
-[build]
-  # 可空白，除非你有特殊 build image 設定
-
 [env]
   PORT = "80"
 
