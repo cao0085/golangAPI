@@ -39,7 +39,7 @@ jobs:
         run: go test ./...
 
       - name: Build Docker image
-        run: docker-compose -f docker-compose.yml --env-file .env.prod build
+        run: docker compose -f docker-compose.yml --env-file .env.prod build
 
     # Optional: push image to Docker Hub
     # - name: Log in to Docker Hub
