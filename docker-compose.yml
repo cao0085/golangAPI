@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    ports:
+      - "7070:${PORT}"
+    env_file:
+      - ${ENV_FILE:-.env.dev}
+    restart: unless-stopped
