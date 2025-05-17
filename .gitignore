@@ -7,8 +7,6 @@ note/
 # 忽略 log 檔
 *.log
 
-# 忽略 Fly.io 自動產生的指令備份
-RunCommand.md
-
 #
 makefile
+Makefile
